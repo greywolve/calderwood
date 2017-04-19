@@ -1,0 +1,136 @@
+{:2017-01-07-19-33-49-UTC
+ {:txes [[{:db/doc "The event's unique identifier"
+           :db/ident :event/uuid
+           :db/valueType :db.type/uuid
+           :db/cardinality :db.cardinality/one
+           :db/unique :db.unique/value
+           :db/id #db/id[:db.part/db]
+           :db.install/_attribute :db.part/db}
+
+          {:db/doc "The event's name"
+           :db/ident :event/name
+           :db/valueType :db.type/keyword
+           :db/cardinality :db.cardinality/one
+           :db/id #db/id[:db.part/db]
+           :db.install/_attribute :db.part/db}
+
+          {:db/doc "The event's data"
+           :db/ident :event/data
+           :db/valueType :db.type/string
+           :db/cardinality :db.cardinality/one
+           :db/id #db/id[:db.part/db]
+           :db.install/_attribute :db.part/db}
+
+          {:db/doc "The event's metadata"
+           :db/ident :event/meta
+           :db/valueType :db.type/string
+           :db/cardinality :db.cardinality/one
+           :db/id #db/id[:db.part/db]
+           :db.install/_attribute :db.part/db}
+
+          {:db/doc "The event's source user"
+           :db/ident :event/user
+           :db/valueType :db.type/ref
+           :db/cardinality :db.cardinality/one
+           :db/id #db/id[:db.part/db]
+           :db.install/_attribute :db.part/db}
+
+          {:db/doc "The event's parent command uuid"
+           :db/ident :event/command-uuid
+           :db/valueType :db.type/uuid
+           :db/cardinality :db.cardinality/one
+           :db/id #db/id[:db.part/db]
+           :db.install/_attribute :db.part/db}
+
+          {:db/doc "The event's client id"
+           :db/ident :event/client-id
+           :db/valueType :db.type/string
+           :db/cardinality :db.cardinality/one
+           :db/id #db/id[:db.part/db]
+           :db.install/_attribute :db.part/db}
+
+          {:db/doc "The event's client sequence number"
+           :db/ident :event/client-seq
+           :db/valueType :db.type/long
+           :db/cardinality :db.cardinality/one
+           :db/id #db/id[:db.part/db]
+           :db.install/_attribute :db.part/db}
+
+          {:db/doc "The user's unique identifier"
+           :db/ident :user/uuid
+           :db/valueType :db.type/uuid
+           :db/cardinality :db.cardinality/one
+           :db/unique :db.unique/value
+           :db/id #db/id[:db.part/db]
+           :db.install/_attribute :db.part/db}
+
+          {:db/doc "The user's first name"
+           :db/ident :user/first-name
+           :db/valueType :db.type/string
+           :db/cardinality :db.cardinality/one
+           :db/index true
+           :db/id #db/id[:db.part/db]
+           :db.install/_attribute :db.part/db}
+
+          {:db/doc "The user's last name'"
+           :db/ident :user/last-name
+           :db/valueType :db.type/string
+           :db/cardinality :db.cardinality/one
+           :db/index true
+           :db/id #db/id[:db.part/db]
+           :db.install/_attribute :db.part/db}
+
+          {:db/doc "The user's email address"
+           :db/ident :user/email
+           :db/valueType :db.type/string
+           :db/cardinality :db.cardinality/one
+           :db/unique :db.unique/value
+           :db/index true
+           :db/id #db/id[:db.part/db]
+           :db.install/_attribute :db.part/db}
+
+          {:db/doc "The user's encrypted password"
+           :db/ident :user/password-digest
+           :db/valueType :db.type/string
+           :db/cardinality :db.cardinality/one
+           :db/index true
+           :db/id #db/id[:db.part/db]
+           :db.install/_attribute :db.part/db}
+
+          {:db/doc "Session UUID"
+           :db/ident :session/uuid
+           :db/valueType :db.type/uuid
+           :db/cardinality :db.cardinality/one
+           :db/unique :db.unique/value
+           :db/index true
+           :db/id #db/id[:db.part/db]
+           :db.install/_attribute :db.part/db}
+
+          {:db/doc "Session user"
+           :db/ident :session/user
+           :db/valueType :db.type/ref
+           :db/cardinality :db.cardinality/one
+           :db/id #db/id[:db.part/db]
+           :db.install/_attribute :db.part/db}
+
+          {:db/doc "Session remote address"
+           :db/ident :session/remote-address
+           :db/valueType :db.type/string
+           :db/cardinality :db.cardinality/one
+           :db/id #db/id[:db.part/db]
+           :db.install/_attribute :db.part/db}
+
+          {:db/doc "Page view url"
+           :db/ident :page-view/url
+           :db/valueType :db.type/string
+           :db/cardinality :db.cardinality/one
+           :db/id #db/id[:db.part/db]
+           :db.install/_attribute :db.part/db}
+
+          {:db/doc "Page view user"
+           :db/ident :page-view/user
+           :db/valueType :db.type/ref
+           :db/cardinality :db.cardinality/one
+           :db/id #db/id[:db.part/db]
+           :db.install/_attribute :db.part/db}
+          ]]}}
